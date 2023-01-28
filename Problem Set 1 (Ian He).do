@@ -36,7 +36,7 @@ histogram X, percent ///
     xtitle("X") ytitle("Percent") ///
     xlabel(, labsize(small)) ylabel(, nogrid angle(0) labsize(small)) ///
     fcolor(navy) lcolor(navy) ///
-	yline(0(2)8, lc(gs13) lp(shortdash)) ///
+    yline(0(2)8, lc(gs13) lp(shortdash)) ///
     plotregion(fcolor(white) lcolor(white)) ///
     graphregion(fcolor(white) lcolor(white))
 graph export "$figdir\PS1_hist_X.pdf", replace
