@@ -1,6 +1,6 @@
 * This do file has solutions to ECON-5243 Problem Set 1, at The University of Oklahoma
 * Author: Ian He
-* Date: Jan 27, 2023
+* Date: Feb 1, 2023
 ***********************************************************************
 
 clear all
