@@ -102,7 +102,8 @@ local FE = "10"
 gen surviver = (X>=`FE')
 
 ** average accounting profits
-sum X if surviver==1
+gen acct_profit = X - `FE'
+sum acct_profit if surviver==1
 display `r(mean)'
 
 ** survival fraction
@@ -111,10 +112,11 @@ display `r(mean)'
 
 * (b)
 local FE = "20"
-drop surviver
+drop surviver acct_profit
 gen surviver = (X>=`FE')
 
-sum X if surviver==1
+gen acct_profit = X - `FE'
+sum acct_profit if surviver==1
 display `r(mean)'
 
 sum surviver
