@@ -9,7 +9,6 @@ clear all
 global localdir "D:\phd\ECON-5243"
 
 global dtadir   "$localdir\Data"
-global figdir   "$localdir\Figures"
 global tabdir   "$localdir\Tables"
 
 
@@ -71,7 +70,7 @@ replace x2 = 0 in 7
 save "$dtadir\PS2_OLS_data.dta", replace
 
 ** Export as excel for coding in MATLAB
-export excel "$dtadir\problem4_data.xls", firstrow(variables) replace
+export excel "$dtadir\PS2_problem4_data.xls", firstrow(variables) replace
 
 
 * (1)
