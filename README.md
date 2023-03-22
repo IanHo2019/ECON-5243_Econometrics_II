@@ -3,6 +3,9 @@ This repository includes Ian's solutions to ECON-5243 coding problem sets (2023 
 
 **Contact:** [ianhe2019@ou.edu](mailto:ianhe2019@ou.edu?subject=[GitHub]%20ECON-5243%20Solutions%20to%20Problem%20Sets).
 
-## Notice on Stata Coding
+## Note on Stata Coding
 In Stata, it's easy to install external packages: run `ssc install package, replace` where `package` should be replaced with the name of the package you want to install. For running my do files, the following packages may have to be installed:
   * For exporting regression results: `estout`, `outreg2`, `asdoc`.
+
+## Note on Data
+The CRSP-Compustat Merged Database (CCM) used in Problem Set 4 is so large that I cannot upload to GitHub. You can download it from the [WRDS](https://wrds-www.wharton.upenn.edu/) platform. For OU students, you can use my guideline ([here](./Appendix/How_to_Download_CCM.pdf)) if you are not familar with WRDS.
