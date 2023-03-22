@@ -2,7 +2,8 @@
 * Author: Ian He
 * Date: Mar 22, 2023
 ***********************************************************************
-* Let me clarify something at the beginning: The following coding is used to solve Problem Set 4 in a "correct" way required by Mu-Jeung Yang. I totally disagree a lot of requirements in this problem set, because in pracrice I never used (and will never use) those stupid methods/commands. For example,
+* Let me clarify something at the beginning:
+* The following coding is used to solve Problem Set 4 in a "correct" way required by Mu-Jeung Yang. I totally disagree a lot of requirements in this problem set, because in pracrice I never used (and will never use) those stupid methods/commands. For example,
 * (1) In Problem 2.4, it's inefficient to export our regression results to MS Excel.
 * (2) In Problem 2.5, all the three methods (to running a fixed-effect model) are outdated and slow. Luckily we have a relatively small dataset in that case; if we have a big dataset (e.g., Chinese Customs database), then all the three methods will kill your hope for research.
 * (3) In Problem 2.9, we can use the "predict" command with the "residuals" option to get the residuals directly.
