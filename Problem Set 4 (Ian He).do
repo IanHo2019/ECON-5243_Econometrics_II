@@ -7,7 +7,7 @@
 * (1) In Problem 2.4, it's inefficient to export our regression results to MS Excel.
 * (2) In Problem 2.5, all the three methods (to running a fixed-effect model) are outdated and slow. Luckily we have a relatively small dataset in that case; if we have a big dataset (e.g., Chinese Customs database), then all the three methods will kill your hope for research.
 * (3) In Problem 2.9, we can use the "predict" command with the "residuals" option to get the residuals directly.
-* Anyway, it's easy to find a good researcher with thousands of publications, but hard to find a good professor with ability to teach just one good lecture.
+* Anyway, it's easy to find a researcher with thousands of publications, but hard to find a professor with ability to teach just one good lecture.
 
 clear all
 
