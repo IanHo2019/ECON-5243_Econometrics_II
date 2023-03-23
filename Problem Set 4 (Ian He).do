@@ -3,13 +3,11 @@
 * Date: Mar 22, 2023
 ***********************************************************************
 * Let me clarify something at the beginning:
-* The following coding is used to solve Problem Set 4 in a "correct" way required by Mu-Jeung Yang. I totally disagree a lot of requirements in this problem set, because in pracrice I never used (and will never use) those stupid methods/commands. For example,
-* (1) In Problem 2.4, it's inefficient to export our regression results to MS Excel.
-* (2) In Problem 2.5, all the three methods (to running a fixed-effect model) are outdated and slow. Luckily we have a relatively small dataset in that case; if we have a big dataset (e.g., Chinese Customs database), then all the three methods will kill your hope for research.
+* The following coding is used to solve Problem Set 4 in a "correct" way required by Mu-Jeung Yang. I totally disagree some requirements in this problem set, because in pracrice I never used (and will never use) those stupid methods/commands. For example,
+* (1) In Problem 2.4, it's inefficient to export our regression results to Excel. Imagine: Will you present your research results in Excel?
+* (2) In Problem 2.5, all the three methods (to running a fixed-effect model) are outdated and work slowly. Luckily, we have a relatively small dataset in this problem; if we have a big dataset (e.g., Chinese Customs database), then any of the three methods will be able to kill your hope for research.
 * (3) In Problem 2.9, we can use the "predict" command with the "residuals" option to get the residuals directly.
-* Anyway, it's easy to find a researcher with bunches of publications, but hard to find a professor with ability to teach just one good lecture.
-
-clear all
+* Anyway, it's easy to find a researcher with a bunch of publications, but hard to find a professor with ability to teach at least one good lecture.
 
 * File paths
 global localdir "D:\phd\ECON-5243"
@@ -246,7 +244,7 @@ estout reg1* reg2* reg3*, keep(mret_exc _cons) ///
 
 local digit = 3
 estout reg1* using "$tabdir\PS4_pooled_reg.tex", keep(mret_exc) ///
-	label varlabels(_cons "Constant") mlab(none) coll(none) ///
+	label mlab(none) coll(none) ///
 	cells(b(star fmt(`digit')) se(par fmt(`digit'))) ///
 	starlevels(* .1 ** .05 *** .01) sty(tex) ///
 	preh("\begin{tabular}{p{0.3\textwidth}p{0.15\textwidth}p{0.15\textwidth}p{0.15\textwidth}}" "\hline \hline" ///
