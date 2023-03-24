@@ -127,6 +127,7 @@ use GVKEY LINKPRIM fyear csho prcc_f bkvlps conml sic using "$dtadir\CCM.dta", c
 keep if LINKPRIM == "P"
 drop if fyear == .
 
+* Make sure the dataset is identified at firm-year level.
 duplicates drop
 isid GVKEY fyear
 
