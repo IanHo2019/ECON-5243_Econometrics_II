@@ -69,9 +69,11 @@ forvalues i = 11/99{
 * (a)
 use "$dtadir\HW6_Ex3_preperiod.dta", clear
 
-forvalues i = 11/99{
-	rename var`i' var`i'_0
+foreach var of varlist * {
+	rename `var' `var'_0
 }
+
+rename ID_0 ID
 
 save "$dtadir\HW6_Ex3_postperiod_rename.dta", replace
 
