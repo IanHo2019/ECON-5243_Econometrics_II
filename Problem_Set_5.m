@@ -1,7 +1,7 @@
-% This MATLAB coding file solves Problem 4 in ECON-5243 Problem Set 5.
+% This MATLAB coding file solves ECON-5243 Problem Set 5.
 % Author: Ian He
 % Institution: The University of Oklahoma
-% Date: Mar 25, 2023
+% Date: Apr 7, 2023
 
 %% Problem 1
 clear
