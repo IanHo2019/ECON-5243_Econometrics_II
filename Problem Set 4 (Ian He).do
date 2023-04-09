@@ -1,4 +1,4 @@
-* This do file has solutions to ECON-5243 Problem Set 4, at The University of Oklahoma
+* This do file has solutions to ECON-5243 Problem Set 4, at The University of Oklahoma.
 * Author: Ian He
 * Date: Mar 22, 2023
 ***********************************************************************
